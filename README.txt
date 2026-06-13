@@ -25,10 +25,11 @@ estratégico, onde cada escolha altera o rumo principal da história.
                            2. COMPILAÇÃO E EXECUÇÃO
 --------------------------------------------------------------------------------
     Para rodar o projeto corretamente, certifique-se de que a estrutura de pacotes
-esteja organizada sob a pasta 'src'. 
+esteja organizada no mesmo nível do arquivo "história.txt", sob a pasta 'src' caso
+esteja utilizando uma IDEA. 
 
-    O arquivo 'historia.txt' contendo o roteiro deve ser posicionado obrigatoriamente
-na raiz principal do projeto (mesmo nível da pasta 'src') para ser lido corretamente.
+    O arquivo "historia.txt" contendo o roteiro deve ser posicionado obrigatoriamente
+na raiz principal do projeto para ser lido corretamente.
 
 Execução:
     Para rodar o jogo, basta executar a classe Main presente dentro do package "principal".
