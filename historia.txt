@@ -1,0 +1,149 @@
+CENA;cena1;Você acorda num quarto escuro do castelo. O que você faz?
+ESCOLHA;Levantar da cama;cena2
+ESCOLHA;Ficar deitado;cena2_deitado
+
+CENA;cena2_deitado;Você tenta dormir de novo, mas alguém começa a esmurrar a sua porta.
+ESCOLHA;Levantar e abrir a porta;cena3_abrir
+ESCOLHA;Ficar quieto na cama;cena3_quieto
+
+CENA;cena2;Você se levanta. De repente, batem na sua porta.
+ESCOLHA;Abrir a porta;cena3_abrir
+ESCOLHA;Ficar quieto;cena3_quieto
+
+CENA;cena3_quieto;Você fica em silêncio. Segundos depois, os guardas arrombam a sua porta! Você vê quem mandou chamar.
+ESCOLHA;Falar com o Rei;cena4
+
+CENA;cena3_abrir;Você abre a porta e é escoltado imediatamente.
+ESCOLHA;Falar com o Rei;cena4
+
+CENA;cena4;O Rei está diante de você, com um olhar de desespero.
+ESCOLHA;Resgatar a princesa desaparecida;cena5
+ESCOLHA;Não ir e recusar a missão;cena_recusar
+
+CENA;cena_recusar;Você recusa a ordem do Rei. É jogado nas masmorras para sempre. Fim de Jogo.
+
+CENA;cena5;Você aceita a missão heroica, mas precisa se preparar. Aonde vai primeiro?
+ESCOLHA;Visitar o ferreiro;cena6
+ESCOLHA;Visitar o mago;cena7
+
+CENA;cena6;O ferreiro te mostra o arsenal. O que você escolhe?
+ESCOLHA;Equipamento Bruto (Espada, escudo e armadura);cena7Bruto
+ESCOLHA;Equipamento Veloz (Arco e armadura leve);cena7Veloz
+ESCOLHA;Mudar de ideia e ir no mago;cena7
+
+CENA;cena7;O mago te oferece os poderes arcanos.
+ESCOLHA;Aprender Magia;cena8Mago
+
+CENA;cena7Bruto;O mago te oferece os poderes arcanos, mas como você já possui muitos equipamentos, você decide apenas pegar uma poção.
+ESCOLHA;Pegar a Poção de Vida;cena8Pocao
+
+CENA;cena7Veloz;O mago te oferece os poderes arcanos, mas como você já possui muitos equipamentos, você decide apenas pegar uma poção.
+ESCOLHA;Pegar a Poção de Vida;cena8Pocao
+
+CENA;cena8Pocao;Você chega na beirada da floresta escura e ouve um rosnado.
+ESCOLHA;Lutar contra o lobo;cena10_combate_lobo
+ESCOLHA;Continuar caminhando sem ligar;cena9
+
+CENA;cena8Mago;Você chega na beirada da floresta escura e ouve um rosnado.
+ESCOLHA;Lutar contra o lobo;cena10_combate_lobo
+ESCOLHA;Continuar caminhando sem ligar;cena9
+
+CENA;cena8;Você chega na beirada da floresta escura e ouve um rosnado.
+ESCOLHA;Lutar contra o lobo;cena10_combate_lobo
+ESCOLHA;Continuar caminhando sem ligar;cena9
+
+CENA;cena9;Você ignora os avisos, pisa em uma armadilha de caçador, é pego de surpresa e morre. Fim de Jogo.
+
+COMBATE;cena10_combate_lobo;Um Lobo Selvagem faminto salta das sombras!;Lobo;30;12;20;cena10_vitoria;morte_batalha
+
+CENA;cena10_vitoria;Você derrotou o lobo e conseguiu extrair carne para viagem (Ganhou Comida).
+ESCOLHA;Continuar a jornada;cena11
+
+CENA;cena11;Caminhando mais a fundo, você encontra uma cabana misteriosa.
+ESCOLHA;Entrar na cabana;cena13
+ESCOLHA;Continuar andando;cena12
+
+CENA;cena12;Você passa reto pela cabana, mas o chão cede. Você cai num buraco sem fundo. Fim de Jogo.
+
+CENA;cena13;Dentro da cabana, você acha vestígios da princesa e uma pista secreta que só você entenderia.
+ESCOLHA;Seguir os rastros para o leste;cena14
+
+CENA;cena14;No caminho para o leste, você dá de cara com um Goblin batedor.
+ESCOLHA;Atacar o Goblin;cena15_combate_goblin
+ESCOLHA;Tentar conversar com o Goblin;cena36_aliado
+
+COMBATE;cena15_combate_goblin;O Goblin puxa uma adaga suja e corre na sua direção!;Goblin;40;15;8;cena15_vitoria;morte_batalha
+
+CENA;cena15_vitoria;O monstro cai. Seguindo a trilha, você esbarra na Gangue Principal dos Goblins!
+ESCOLHA;Lutar contra a gangue inteira;cena16_combate_gangue
+
+COMBATE;cena16_combate_gangue;A gangue de Goblins te cerca sedenta por sangue! É uma luta muito difícil!;Gangue Goblin;120;25;1;cena17;morte_batalha
+
+CENA;cena17;Você sobrevive por um milagre e dorme ali mesmo para se recuperar. Ao acordar, precisa avançar.
+ESCOLHA;Ir correndo a toda velocidade;cena18
+ESCOLHA;Ir no silêncio e nas sombras;cena35
+
+CENA;cena35;Você tenta ir no silêncio, mas não percebe uma patrulha e é esfaqueado pelas costas. Fim de Jogo.
+
+CENA;cena18;Correndo pela floresta, você encontra uma Bruxa sendo atacada por goblins!
+ESCOLHA;Ajudar a bruxa;cena20
+ESCOLHA;Ignorar e seguir a jornada;cena19
+
+CENA;cena19;Você abandona a bruxa, mas esbarra num Urso gigante mais à frente e morre. Fim de Jogo.
+
+CENA;cena20;Você salva a bruxa! Como retribuição, ela rastreia a princesa usando magia. Vocês chegam no bosque onde está o acampamento principal da gangue.
+ESCOLHA;Planejar um ataque furtivo;cena22
+ESCOLHA;Atacar de frente;cena21
+
+CENA;cena21;Vocês atacam feito loucos. São rapidamente capturados e jogados num precipício. Fim de Jogo.
+
+CENA;cena22;Vocês esperam anoitecer e desviam das tendas da gangue sorrateiramente.
+ESCOLHA;Avançar para a tenda principal;cena23
+
+CENA;cena23;Vocês acham a princesa lá dentro! Como proceder?
+ESCOLHA;Agir em silêncio;cena33
+ESCOLHA;Lutar contra os guardas e resgatar na força;cena24
+
+CENA;cena33;Agindo em silêncio, a princesa revela a verdade: ELA é a rainha dos goblins! Rápida, a Bruxa lança um feitiço de purificação que reverte a princesa ao bem. Vocês voltam ao castelo, onde você revela seu amor por ela. Final Feliz!
+
+CENA;cena24;A luta atrai atenção. No meio do caos, a Bruxa é morta pelos goblins, mas você alcança a princesa!
+ESCOLHA;Escutar o que a princesa tem a dizer;cena25
+ESCOLHA;Pegar ela à força e sair correndo;cena32
+
+CENA;cena32;Você tenta arrastá-la à força. Ela se debate, atrapalha a sua corrida e ambos caem em um buraco mortal. Fim de Jogo.
+
+CENA;cena25;A princesa grita para você parar e revela que é a chefe dos goblins. Ela não quer ir embora!
+ESCOLHA;Aceitar a decisão e ir embora sem ela;cena27
+ESCOLHA;Levar ela à força mesmo assim;cena32
+
+CENA;cena27;Você entende a escolha dela e faz a longa viagem de volta ao castelo sozinho. O Rei exige respostas.
+ESCOLHA;Contar a verdade ao Rei;cena29
+ESCOLHA;Mentir dizendo que ela morreu;cena31
+
+CENA;cena31;Você conta uma mentira triste. O Rei acredita, o luto toma o reino, mas sua jornada termina em paz. Fim de Jogo.
+
+CENA;cena29;Você conta a verdade. O Rei fica furioso, convoca o exército e planeja resgatá-la à força bruta!
+ESCOLHA;Liderar o exército na guerra;cena30_guerra
+
+COMBATE;cena30_guerra;Você volta ao acampamento goblin para derrotar o resto dos goblins!;Horda Goblin;50;25;1;cena_fim_guerra;morte_batalha
+
+CENA;cena_fim_guerra;O exército vence e o castelo é restaurado na base da violência. A jornada acaba. Fim de Jogo.
+
+CENA;cena36_aliado;Você conversa com o Goblin. Incrivelmente, vocês se dão bem! Ele se alia a você e te guia direto para a base secreta onde a princesa está.
+ESCOLHA;Atacar a base de Dia;cena_lutar_dia
+ESCOLHA;Atacar a base de Noite;cena37
+
+CENA;cena_lutar_dia;Vocês atacam de dia, mas os goblins estavam acordados e preparados. Você é trucidado. Fim de Jogo.
+
+CENA;cena37;Vocês entram na calada da noite, acham a princesa e fogem, mas acabam encurralados por monstros noturnos assustadores!
+ESCOLHA;Lutar todos juntos;cena_todos_morrem
+ESCOLHA;Se sacrificar para eles fugirem;cena_sacrificio
+
+CENA;cena_todos_morrem;Vocês lutam bravamente, mas os monstros são muitos. Todos morrem. Fim de Jogo.
+
+CENA;cena_sacrificio;Você manda o Goblin e a princesa correrem e segura os monstros sozinho. Você morre lutando bravamente. No castelo, a princesa chora e revela ao goblin o quanto amava você.
+ESCOLHA;Aguardar o desfecho;cena_reviver
+
+CENA;cena_reviver;O goblin rastreia o seu corpo caído. Com uma magia antiga, ele te revive... mas suas memórias se foram. Um novo recomeço. Fim de Jogo.
+
+CENA;morte_batalha;Você não resistiu aos ferimentos e caiu no campo de batalha. Sua lenda acaba aqui.
