@@ -13,7 +13,7 @@ public class Main {
         GerenciadorJogo historia = new GerenciadorJogo();
 
         try{
-            historia.carregarHistoriaDoArquivo("historia.txt");
+            historia.carregarHistoriaDoArquivo("../../historia.txt");
 
             historia.iniciarJogo();
 
