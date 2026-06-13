@@ -26,7 +26,7 @@ estratégico, onde cada escolha altera o rumo principal da história.
 --------------------------------------------------------------------------------
     Para rodar o projeto corretamente, certifique-se de que a estrutura de pacotes
 esteja organizada no mesmo nível do arquivo "história.txt", sob a pasta 'src' caso
-esteja utilizando uma IDEA. 
+esteja utilizando uma IDE. 
 
     O arquivo "historia.txt" contendo o roteiro deve ser posicionado obrigatoriamente
 na raiz principal do projeto para ser lido corretamente.
